@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vts.oop.memorius.app.MenuActivity"
+     >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_title"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/current_time_dimen"
+        android:layout_marginTop="@dimen/menu_title_margin_top"/>
+
+    <ViewFlipper
+        android:id="@+id/meme_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/restart_btn_dimen_height">
+
+        <ImageView
+            android:layout_width="@dimen/menu_pic_dim"
+            android:layout_height="@dimen/menu_pic_dim"
+            android:src="@drawable/waa"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image_button_desc"
+        />
+
+        <ImageView
+            android:layout_width="@dimen/menu_pic_dim"
+            android:layout_height="@dimen/menu_pic_dim"
+            android:src="@drawable/motherofgoad"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image_button_desc"
+        />
+
+        <ImageView
+            android:layout_width="@dimen/menu_pic_dim"
+            android:layout_height="@dimen/menu_pic_dim"
+            android:src="@drawable/watchout"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image_button_desc"
+        />
+
+        <ImageView
+            android:layout_width="@dimen/menu_pic_dim"
+            android:layout_height="@dimen/menu_pic_dim"
+            android:src="@drawable/okay"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image_button_desc"
+            />
+
+        </ViewFlipper>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/restart_btn_dimen_height"
+        android:layout_alignParentBottom="true"
+        android:background="#fdbb47" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/restart_btn_dimen_height"
+        android:text="@string/btn_play_string"
+        android:background="#fdbb47"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btn_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/restart_btn_dimen_height"
+        android:layout_marginLeft="@dimen/btn_margin_left_right"
+        android:text="@string/highscore_btn"
+        android:background="#fdbb47"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#fff"
+        android:onClick="onClick"/>
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="3dp"
+        android:hint="@string/name_hint" />
+
+</RelativeLayout>

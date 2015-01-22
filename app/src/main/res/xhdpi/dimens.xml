@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="imgButton_width">80dp</dimen>
+    <dimen name="imgButton_height">80dp</dimen>
+    <dimen name="textView_textSize">18sp</dimen>
+    <dimen name="editText_textSize">50sp</dimen>
+</resources>

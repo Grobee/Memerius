@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vts.oop.memorius.app.HighscoreActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_highscore"
+        android:textSize="@dimen/current_time_dimen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/orange_bar"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="#fdbb47"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="83dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/highscore_btn_name"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highscore_btn_score"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="100dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/textview_highscore_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orange_bar"
+        android:textSize="24sp"
+        android:layout_marginLeft="70dp"
+        android:textAllCaps="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textview_highscore_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orange_bar"
+        android:layout_alignParentRight="true"
+        android:textSize="24sp"
+        android:layout_marginRight="90dp"
+        android:textAlignment="center" />
+
+</RelativeLayout>
